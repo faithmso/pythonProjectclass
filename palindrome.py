@@ -4,5 +4,20 @@ the same forward and backward.
 """
 
 
-def check_palindrome(palindrome):
-    for letter in palindrome:
+try:
+    palindrome = input("Enter a name you think reads the same forward and backward ie palindrome: ")
+    reversed_string = "".join(reversed(palindrome))
+    if reversed_string == palindrome:
+
+        print(f'The word {palindrome} is a palindrome.')
+
+    else:
+        print(f"The word {palindrome} is not a palindrome.")
+
+except NameError:
+    print("Enter a string.")
+
+
+
+
+
